@@ -1,5 +1,4 @@
 <?php
-
 class Slug
 {
 	protected $original;
