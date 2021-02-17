@@ -20,4 +20,11 @@ class SlugTest extends TestCase
 		$this->assertEquals($slug->render(), "cursos-de-laravel");
 	}
 
+	public function test_get_original_string()
+	{
+		$slug = new Slug("Cursos de Laravel");
+		$this->assertEquals($slug->getOriginal(), "Cursos de Laravel");
+		$this->assertIsString($slug->getOriginal());
+	}
+
 }
