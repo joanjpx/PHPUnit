@@ -1,0 +1,21 @@
+{
+    "name": "joanjpx/prueba",
+    "description": "Pruebas Unitarias",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Joan Perez",
+            "email": "joansyn.s@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpunit/phpunit": "8.5.x-dev"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"App\\": "app"
+    	}
+    }
+    
+}
