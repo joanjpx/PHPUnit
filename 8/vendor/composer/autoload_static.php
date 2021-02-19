@@ -52,6 +52,10 @@ class ComposerStaticInit0336081be3a5064201e4c7aed08f2559
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
         ),
+        'M' => 
+        array (
+            'Models\\' => 7,
+        ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
@@ -68,6 +72,10 @@ class ComposerStaticInit0336081be3a5064201e4c7aed08f2559
         'C' => 
         array (
             'Carbon\\' => 7,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -142,6 +150,10 @@ class ComposerStaticInit0336081be3a5064201e4c7aed08f2559
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
+        'Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/models',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/support',
@@ -173,6 +185,10 @@ class ComposerStaticInit0336081be3a5064201e4c7aed08f2559
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
