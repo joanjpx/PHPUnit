@@ -1,7 +1,6 @@
 <?php
 namespace App;
-
-class DB
+Class DB
 {
     // Definicion de atributos
     private $host;
@@ -16,13 +15,13 @@ class DB
         $this->host = "127.0.0.1";
         $this->user = "root";
         $this->password = "";
-        $this->database = "phpunit";
+        $this->database = "phpunit_test";
     }
 
     public function CreateConnection()
     {
         // Metodo que crea y retorna la conexion a la BD.
-        $this->conn = new mysqli($this->host, $this->user, $this->password, $this->database);
+        $this->conn = new \MySQLi($this->host, $this->user, $this->password, $this->database);
         if ($this->conn->connect_errno) {
             die("Error al conectarse a MySQL: (" . $this->conn->connect_errno . ") " . $this->conn->connect_error);
         }
@@ -36,29 +35,23 @@ class DB
 
     public function ExecuteQuery($sql)
     {
-        /* Metodo que ejecuta un query sql
- Retorna un resultado si es un SELECT*/
         $result = $this->conn->query($sql);
         return $result;
     }
 
     public function GetCountAffectedRows()
     {
-        /* Metodo que retorna la cantidad de filas
- afectadas con el ultimo query realizado.*/
+
         return $this->conn->affected_rows;
     }
 
     public function GetRows($result)
     {
-        /*Metodo que retorna la ultima fila
- de un resultado en forma de arreglo.*/
         return $result->fetch_row();
     }
 
     public function SetFreeResult($result)
     {
-        //Metodo que libera el resultado del query.
         $result->free_result();
     }
 }

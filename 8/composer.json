@@ -1,0 +1,13 @@
+{
+    "name": "joanjpx/test",
+    "authors": [
+        {
+            "name": "Joan Perez",
+            "email": "joansyn.s@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^8.5",
+        "illuminate/database": "^7.30"
+    }
+}
